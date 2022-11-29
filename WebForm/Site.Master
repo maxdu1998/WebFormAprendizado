@@ -1,0 +1,53 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="WebForm.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Zerotype Website Template</title>
+    <script src="/Scripts/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="/Styles/style.css" type="text/css">
+    <script src="/Scripts/menu.js"></script>
+    <link href="/Styles/menu.css" rel="stylesheet" />
+    <script src="http://code.highcharts.com/highcharts.js"></script>
+    <script src="http://code.highcharts.com/modules/exporting.js"></script>
+    <asp:ContentPlaceHolder ID="Cabecalho" runat="server"></asp:ContentPlaceHolder>
+
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <div id="header">
+
+            <div id="sse1">
+                <div id="sses1">
+                    <ul>
+                        <li><a runat="server" href="~/Views/Principal.aspx">Início</a></li>
+                        <li><a runat="server" href="~/Views/Sobre.aspx">Sobre</a></li>
+                        <li><a runat="server" href="~/Views/Grafico.aspx">Gráfico</a></li>
+                        <li><a runat="server" href="~/Views/Contato.aspx">Fale Conosco</a></li>
+
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="contents">
+            <asp:ContentPlaceHolder ID="Main" runat="server"></asp:ContentPlaceHolder>
+            <asp:ContentPlaceHolder ID="Rodape" runat="server"></asp:ContentPlaceHolder>
+        </div>
+        <div id="footer">
+            <div class="clearfix">
+                <div id="connect">
+                    <a href="http://freewebsitetemplates.com/go/facebook/" target="_blank" class="facebook"></a><a href="http://freewebsitetemplates.com/go/googleplus/" target="_blank" class="googleplus"></a><a href="http://freewebsitetemplates.com/go/twitter/" target="_blank" class="twitter"></a><a href="http://www.freewebsitetemplates.com/misc/contact/" target="_blank" class="tumbler"></a>
+                </div>
+                <p>
+                    © 2023 Zerotype. All Rights Reserved.
+                </p>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
